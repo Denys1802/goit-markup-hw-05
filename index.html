@@ -45,7 +45,13 @@
       <!-- DECISION -->
 		<section class="decision section">
 			<h1>Ефективні рішення для вашого бізнесу</h1>
-		   <button class="button" type="button">Замовити послугу</button>
+		   <button data-modal-open class="button" type="button">Замовити послугу</button>
+			<div data-modal class="backdrop is-hidden" >
+				<div class="modal">
+					<button data-modal-close class="modal-button" type="button">
+					</button>
+				</div>
+			</div>
 		</section>
       <!-- ADVANTAGES -->
 		<section class="advantages section">
@@ -92,16 +98,25 @@
 						<a href="" class="doing-link">
 							<img src="./images/img1.jpg" alt="ноутбук на столі" width="370">
 						</a>
+						<div class="applications">
+							Десктопні додатки
+						</div>
 					</li>
 					<li>
 						<a href="" class="doing-link" >
 							<img src="./images/img2.jpg" alt="мобільний телефон і ноутбук" width="370">
 						</a>
+						<div class="applications">
+							Мобільні додатки
+						</div>
 					</li>
 					<li>
 						<a href="" class="doing-link" >
 							<img src="./images/img3.jpg" alt="планшет в руках" width="370">
 						</a>
+						<div class="applications">
+							Дизайнерські рішення
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -341,5 +356,6 @@
 			</div>
 	   </div>
 	</footer>
+	<script src="./js/modal.js"></script>
 </body>
 </html>

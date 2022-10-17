@@ -310,11 +310,12 @@ font-family: 'Roboto', sans-serif; */
   background-color: var(--white-color-text);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover {
-  border: 2px solid var(--black-color-text);
+.modal-button:hover svg {
+  fill: var(--accent-color);
 }
 
 /* =================SECTION ADVANTAGES ==================*/
